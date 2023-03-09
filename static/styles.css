@@ -1,0 +1,219 @@
+
+
+@media screen and (min-width: 1000px){
+    /* make element sticky above certain width*/
+    .sticky-element {
+        position: -webkit-sticky;
+        position: sticky;
+        /* make element sticky once it hits top of viewport  */
+        top: 5vh;
+        z-index: 999;
+    }
+    /* adjust navbar-brand */
+    .navbar-brand {
+        font-size: 1.6rem;
+        font-weight: bolder;
+        padding-left: 3vw;
+    }
+    .increase-font-size{
+        font-size: 22px;
+    }
+}
+
+/* image */
+
+.self-picture-size{
+    width: 500px;
+}
+
+/* make footer always at bottom of viewport regardless of contact */
+
+html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 2;
+    background-color: #e4e4e42a;
+
+  }
+  
+footer {
+    margin-top: auto;
+  }
+
+.footer-message-border {
+    width: 35vw;
+    border-bottom: dashed;
+    margin: 0 auto;
+    border-bottom: dashed rgba(192, 96, 20, 0.3);
+}
+
+/* spacing  */
+.container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+p {
+    font-size: 18px;
+}
+
+p:first-of-type, .padding-left-added-sm > li:first-of-type {
+    margin-top: 20px;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 18px;
+}
+
+/* portfolio title */
+
+#portfolio-title{
+    color: #c06014;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* picture cutomisation */
+img {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* select customisation */
+
+.form-select {
+    width: 310px;
+    margin-bottom: 2vh;
+    padding-left: 6px;
+}
+
+.form-select, .btn {
+	background-color: #c06014;
+	color: #ffffff;
+	font-size: 18px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 999px){
+    .form-select {
+        position: relative;
+        left: 1.2vw;
+    }
+     /* margin for <li> */
+     .padding-left-added-lg > li:first-of-type {
+        margin-top: 20px;
+    }
+
+    h3 {
+        padding-left: 5px;
+    }
+
+    .form-select {
+        margin-left: 4px;
+    }
+}
+
+/* navbar customisation */
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-text, h2 {
+	color: #c06014;
+}
+
+.navbar-text {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.navbar-brand {
+	font-size: 1.6rem;
+	font-weight: bolder;
+	
+}
+
+.navbar-nav {
+    padding-right: 3vw;
+}
+
+/* border for sections */
+
+.border-separation {
+    border-bottom: dashed rgba(192, 96, 20, 0.3);
+}
+
+/* toggle button customisation */
+
+.navbar-toggler-icon {
+    background-color: #c06014;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+.navbar-toggler {
+    outline: 3px solid #535353;
+    outline-offset: -3px;
+  }
+
+.navbar-toggler-icon:hover {
+    background-color: #0a58ca;
+}
+
+/* style contact me button */
+
+#contact-button {
+    /* center and decrease width proportionately to div */
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+}
+
+
+a {
+	color: #c06014;
+	text-decoration: underline;
+}
+
+.remove-padding {
+    padding: 0;
+}
+
+.padding-left-added-sm {
+    padding-left: 15px;
+}
+
+.padding-left-added-lg {
+    padding-left: 30px;
+}
+
+
+/* 
+    Arial, Helvetica, sans-serif
+    "Arial Black", Gadget, sans-serif
+    "Comic Sans MS", cursive, sans-serif
+    Georgia, serif
+    Impact, Charcoal, sans-serif
+    "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", serif
+    Tahoma, Geneva, sans-serif
+    "Times New Roman", Times, serif
+    Verdana, Geneva, sans-serif
+
+    "Times New Roman", Times, serif
+    font-family: Georgia, serif;
+    Verdana, Geneva, sans-serif;
+*/

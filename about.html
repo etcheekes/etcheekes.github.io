@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>
+        </title>
+
+        <!-- specify character encoding -->
+        <meta charset="utf-8">
+
+        <!-- set viewport to scale appropriately to different device and screen sizes -->
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <!-- get bootstrap from http://getbootstrap.com/docs/5.1/ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- link stylesheet -->
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <!-- link javascript -->
+        <script src="/static/main.js"></script>
+
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand navbar-text" href="/index.html">Portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text " aria-current="page" href="/about.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text " href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="container">
+            <div class="row">
+                <!-- picture of me -->
+                <div class="col">
+                    <img src="images/self_picture_about.jpeg" class="img-fluid rounded-circle sticky-element self-picture-size" alt="picture of Erik">
+                </div>
+                <div class="col">
+                    <select class="form-select form-select-sm"name="about-me" id="selectOptions">
+                        <option value="instruct-visitor">What would you like to know?</option>
+                        <option value="programming-journey">My programming journey</option>
+                        <option value="decision-to-program">Decision to program</option>
+                        <option value="education">Education</option>
+                    </select>
+                    <div id="instruct-visitor" style="display:none">
+                        <p>Click above to find out more about me.</p>
+                    </div>
+                    <div id="programming-journey" style="display:none">
+                        <h3>Programming education</h3>
+                        <p>I first used a programming language called R during my PhD at Cardiff University to conduct statistical analysis for my research. Following this, I completed the <a href="https://gb.coursera.org/professional-certificates/google-data-analytics" target="_blank">Google Data Analytics Professional Certificate</a> which dedicated a part of the course to R and also introduced me to SQL and databases. Next, I finished the <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/">Scientific Computing with Python</a> course from freeCodeCamp which focused on python and <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x">Harvard's CS50x course</a> “Introduction to the intellectual enterprises of computer science and the art of programming” which touched upon multiple languages. </p>
+                        <p>These courses and experiences gave me the building blocks to become, and grow, as a web developer. More specifically (non-programmers may wish to skip the rest of this paragraph), I learned fundamental concepts such as data types, variables, operators, conditional statements, functions, and loops. I also gained knowledge of more complex and deeper topics like data structures, programming paradigms like object-oriented programming, abstraction, relational databases, memory, and more.</p> 
+                        <h3>Experience</h3>
+                        <p>I have gained experience in using multiple programming languages including JavaScript, Python, C, SQL, and R. Likewise, I have experience in using the markup language HTML (used to structure webpages) and style language CSS (used to influence webpages’ aesthetics). I have used these languages to successfully complete numerous practical assignments and projects set in the courses that were designed to test my ability to solve real-world programming problems.</p>
+                        <p>Lastly, I conceived, designed, and implemented a programming project on my own to fulfil a need that people have (to create workout routines). This project required me to consolidate and implement much of what I learned throughout my programming journey. I utilised HTML, CSS, JavaScript, Python, a database, and SQL to create a functional web application that you can use <a href="https://lift-it.up.railway.app/" target="_blank">here</a></p>
+                        <h3>Future plans</h3>
+                        <p>Creating Lift-It showed that project-based-learning is the best way for me to solidify and improve my programming skills. By applying programming concepts in my own project, I gained a far deeper understanding of how they work in real-world scenarios. Moreover, I learned new concepts, frameworks, and skills that were necessary to achieve my initial vision for Lift-It.</p>
+                        <p>Therefore, I will continuously develop new projects that tackle real-life problems to reinforce my current skills, while also challenging myself to incorporate new concepts that will improve me as a web developer.</p>
+                        <p>Furthermore, I am eager to engage in web development work for a client or business. If you are interested in working with me, please contact me <a href="/contact.html">here</a> or directly by email through dev.erik.c@gmail.com.</p>
+                    </div>
+                    <div id="decision-to-program" style="display:none">
+                        <p>As a PhD graduate in an unrelated field, I chose to become a programmer and web developer. If you’re wondering why then please read.</p>
+                        <ol>
+                            <li>The work is rewarding.</li>
+                        </ol>
+                        <p>What you can do with a computer, a programming language, and lines of code is truly impressive. How it all works under-the-hood is fascinating. Being able to, yourself, put together a workable program or website that is helpful to yourself or another is, simply put, incredibly rewarding.</p>
+                        <ol start="2">
+                            <li>The process is captivating and satisfying.</li>
+                        </ol>
+                        <p>While programming has its share of frustrations (as everything does), I personally find the work captivating and satisfying. Programming invites creativity as one applies various programming concepts in your toolkit to solve problems and create. I find this continual process of designing, creating, and adjusting (or more truthfully phrased, debugging) programs to be satisfying. Furthermore, the more I program the better at this process I get, and this improvement adds another layer of satisfaction.</p>
+                        <ol start="3">
+                            <li>My academic experience transfers over.</li>
+                        </ol>
+                        <p>Completing my PhD was undoubtedly one of the most challenging endeavours of my life. The process transformed me into an expert researcher, instilled in me a strong drive to succeed, cultivated a high level of discipline, and honed my ability to persevere through difficult problems until they are resolved. These skills and traits have been instrumental for learning programming and web development. Furthermore, they position me well to continue honing my skillset in the future.</p>
+                    </div>
+                    <div id="education" style="display:none">
+                        <div class="container-fluid mt-5 remove-padding ">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                  <h3>Certificates</h3>
+                                  <ul class="remove-padding padding-left-added-sm">
+                                    <li>CS50x 2022: Introduction to the intellectual enterprises of computer science and the art of programming</li>
+                                    <a href="https://certificates.cs50.io/104743cd-576d-471e-bf20-10daa265fb4b.pdf?size=letter">Online verification</a>
+                                    <li>freeCodeCamp 2022: Scientific Computing with Python</li>
+                                    <a href="https://www.freecodecamp.org/certification/fcc89409c3b-7009-4e97-a874-a13282364529/scientific-computing-with-python-v7">Online verification</a>
+                                    <li>Google 2022: Google Data Analytics Professional Certificate</li>
+                                    <a href="https://www.credly.com/badges/21c664e4-98f2-4a93-9304-93e65cb87646?source=linked_in_profile">Online verification</a>
+                                  </ul>
+                                </div>
+                                                    
+                                <div class="col-sm-4">
+                                  <h3>University</h3>
+                                  <ul class="remove-padding padding-left-added-sm">
+                                    <li>Cardiff University 2013-2016: Criminology and Sociology (BSc Econ)</li>
+                                    <li>Cardiff University 2016-2017: Social Science Research Methods (MSc)</li>
+                                    <li>Cardiff University 2017-2022: Doctor of Philosophy</li>
+                                  </ul>
+                                </div>
+                              
+                                <div class="col-sm-4">
+                                  <h3>Pre-university</h3>
+                                  <ul class="remove-padding padding-left-added-sm">
+                                    <li>The Castle School 2005-2007</li>
+                                    <li>The British Academy 2007-2010</li>
+                                    <li>Richard Huish College 2010-2012</li>
+                                  </ul>
+                                </div>
+                              </div>                              
+                        </div>
+                        <p>Feel free to check out my PhD thesis, titled "How does legalising cannabis influence the purchasing choices of cannabis consumers and the modus operandi of illicit cannabis suppliers?",  <a href = "https://orca.cardiff.ac.uk/id/eprint/152022/" target="_blank">here</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script>
+        revealAboutText();
+        convertColsToRows(1000);
+    </script>
+    </body>
+    <footer>
+        <div class="container">
+            <div class="footer-message-border"></div>
+            <p class="text-center">
+                Lets talk, contact me at dev.erik.c@gmail.com or leave a message <a href="/contact.html">here</a>.
+            </p>
+        </div>
+    </footer>
+</html>
